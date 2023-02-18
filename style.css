@@ -1,0 +1,16 @@
+.navbar{
+background-color: aliceblue;
+}
+.container-fluid {
+    background-color: lightgoldenrodyellow;
+}
+.text-center{
+text-align: left;
+}
+.navbar{
+  
+  cursor: pointer;
+}
+.logo{
+  size: 20px,20px;
+}

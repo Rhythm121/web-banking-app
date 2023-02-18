@@ -2,98 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>learnbit-Online Eduction Platform </title>
-    <link rel="stylesheet" href="./css/style.css" >
-    
+    <title>Basic Banking System</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <!-- AOS  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
 </head>
-<body>
-   <nav class="navbar background h-nav-resp">
-    <ul class="nav-list v-class-resp">
-        <div class="logo"><img src="image\lp.jpg"  alt="logo"></div>
-        <li><a href="#home" class="">Home</a></li>
-        <li><a href="#about" class="">About</a></li>
-        <li><a href="#services" class="">Services</a></li>
-        <li><a href="#contact Us" class="">Contact Us</a></li>
-    </ul>
-    <div class="rightNav v-class-resp">
-        <input type="text" name="search" id=" search">
-        <button class="btn-sm">Search</button>
-    </div>
-    <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-    </div>
-   </nav>
+<body onload="loader()">
 
-   <section class="background firstSection">
-    <div class="box-main">
-        <div class="firsthalf">
-            <p class="text-big">THE FUTURE OF EDUCATION IS HERE</p>
-            <p class="text-small" >learnbit for Education<br> Collaborated with research partner Canvas8 to conduct a study across<br> 24 countries on the future of education <br>The result is a three-part global report highlighting insights from around the world.</p>
-         <div> <button class="btn">Subscribe</button>
-               <button class="btn">Watch Vedio</button>
+  <!-- loader for splash screen -->
+  <div id="loading"></div>
+
+    <!-- navbar starts here  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="logo"><img src="./logo.jpg"  alt="logo"></div>
+        <a class="navbar-brand" href="./index.html">your own Bank</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./customers.html">Customers</a>
+            </li>
+          </ul>
         </div>
+    </nav>
+    <!-- navbar ends here  -->
 
+    <!-- here content starts here -->
+    <div class="container-fluid hero-content">
+      <div class="row align-items-center">
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-up">
+          <h1>Money transaction</h1>
+          <p class="lead muted">Easy way to transfer money from any where</p>
+          <p>Welcome</p>
+          <br>
+          <br>
+          <a class="get-started" href="./customer.html">Get Started</a>
         </div>
-        <div class="secondhalf">
-            <img src="/image/lp.jpg" alt="laptop image">
+        <div class="col-md-6 col-sm-12 text-center" data-aos="fade-left">
+          <div class="hero-img-div">
+            <img class="hero-img" src="./imgmoneytransfer.jpg" alt="img-showing-money-transfer">
+          </div>
         </div>
+      </div>
+    </div>
+    <!-- here content ends here -->
 
-    </div>
 
-   </section>
-   <hr>
-   <section class="secRight">
-    <div class="paras">
-    <p class="sectionTag text-big">The End Of Search Is Here</p>
-    <p class="sectionSubTag text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis non fuga ab, soluta exercitationem pariatur inventore. Consectetur, incidunt, autem temporibus amet aut dolorem ullam libero adipisci neque, corrupti repudiandae!</p>
-    </div>
-    <div class="thumbnail">
-        <img src="/image/study2.jpg" alt=" laptopimage">
-    </div>
-   </section>
-   <hr>
-</section>
-<section class="secLeft">
- <div class="paras">
- <p class="sectionTag text-big">The End Of Search Is Here</p>
- <p class="sectionSubTag text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis non fuga ab, soluta exercitationem pariatur inventore. Consectetur, incidunt, autem temporibus amet aut dolorem ullam libero adipisci neque, corrupti repudiandae!</p>
- </div>
- <div class="thumbnail">
-     <img src="/image/study.jpg" alt=" laptopimage">
- </div>
-</section>
-</section>
-<hr>
-<section class="section">
- <div class="paras">
- <p class="sectionTag text-big">The End Of Search Is Here</p>
- <p class="sectionSubTag text-small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis non fuga ab, soluta exercitationem pariatur inventore. Consectetur, incidunt, autem temporibus amet aut dolorem ullam libero adipisci neque, corrupti repudiandae!</p>
- </div>
- <div class="thumbnail">
-     <img src="/image/lp.jpg" alt=" laptopimage">
- </div>
-</section>
-<hr>
-<Section class="contact">
-    <h2 class="text-center">Contact Us</h2>
-    <div class="form">
-        <input  class="form-input" type="text" name="name" id="name" placeholder="Enter Your Name">
-        <input class="form-input"type type="text" name="phone" id="phone" placeholder="Enter Your Phonenumber">
-        <input class="form-input"type type="text" name="name" id="email" placeholder="Enter Your email">
-        <textarea class="form-input" name="text" id="text" cols="30" rows="10" placeholder="Elaborate your concern"></textarea><br>
-        <button class="btn btn-dark">Submit</button> 
-    </div>
-</Section>
-<footer>
-    <p class="text-footer">
-        copyright &copy;2027-All Rights Reserved
-    </p>
-</footer>
-<script src="/js/resp.js"></script>
+
+
+    <!-- footer starts here -->
+    <footer>
+      <hr>
+      <div class="row text-center">
+        <div class="col-md-6">
+          <p>This IS A MONEY TRANSACTION SITE BY RHYTHM</p>
+          
+        </div>
+        <div class="col-md-6 text-center">
+            <ul class="social-icons">
+              Contact Me:
+              <li><a target="_blank" class="github" href="https://github.com/Rhythm121"><i class="fab fa-github fa-2x"></i></a></li>
+              
+              <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/rhythm-rohatgi-649236200/"><i class="fab fa-linkedin fa-2x"></i></a></li>   
+            </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends here -->
+
+    <!-- spalsh screen js -->
+    <script>
+      var preloader = document.getElementById("loading");
+      function loader(){
+        preloader.style.display = 'none';
+      }
+    </script>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+
+    <!-- aos data  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+      });
+    </script>
+    
 </body>
-
 </html>
